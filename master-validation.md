@@ -34,7 +34,7 @@ Mean and10th/90th percentiles are estimates, not guarantees. If trials exceed th
 
 - 37 existing construction checks passed: T9 endpoint, invoice totals, dependencies, three queues, funding, research ROI, resource forecasts, held completions, migrations and imports.
 - 26 Fighter checks passed: exact snapshot, marginal bonuses, conversions, duplicate arithmetic, inventory offsets, missing evidence, probability validation, deterministic delivery cases, seeded reproducibility, censoring and malformed input. A stochastic single-source case agrees with the negative-binomial mean within the test tolerance.
-- 12 workspace checks passed:20-version recovery retention, forward/reverse synchronization, pending edits, untouched-field preservation, unknown-box handling, export, schema validation and same-day audit safety.
+- 14 workspace checks passed:20-version recovery retention, forward/reverse synchronization, pending edits, untouched-field preservation, unknown-box handling, export, schema validation same-day audit safety, revised-target completion and maximum-level queue validity.
 - Actual browser checks:59 editable building rows rendered; Base edit survived reload; Hospital edits synchronized in both directions and updated the construction view; Fighter inventory/scenario edits persisted and propagated between tabs; random acquisition cards and spending chart rendered; complete three-tool export downloaded, validated and imported through the replacement preview. No page errors in final checked views.
 - Desktop1280px and phone390px/320px reviewed. A mobile editor overflow was corrected; both guide and construction pages fit320px without page-wide overflow. Wide inventory tables use their own horizontal scroll area.
 
