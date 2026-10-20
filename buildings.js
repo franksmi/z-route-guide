@@ -59,16 +59,16 @@ window.ZROUTE_BUILDINGS = [
     "id": "camp",
     "group": "Building Inventory",
     "label": "Soldier Training Camp 1",
-    "value": "23",
+    "value": "24",
     "source": "Manual / player-confirmed building audit",
     "status": "manual",
     "updated": "2026-10-20",
     "building": true,
     "built": true,
-    "upgradeTarget": 24,
-    "upgradeStatus": "upgrading",
+    "upgradeTarget": null,
+    "upgradeStatus": "none",
     "access": "available",
-    "observationNote": "~2h remaining when observed; T8 soldiers unlock at 24. Completion requires player confirmation."
+    "observationNote": "Player confirms Camp 1 Lv24, T8 unlocked; 20 October 2026."
   },
   {
     "id": "building-soldier-training-camp-2",
@@ -164,9 +164,10 @@ window.ZROUTE_BUILDINGS = [
     "updated": "2026-10-20",
     "building": true,
     "built": true,
-    "upgradeTarget": null,
-    "upgradeStatus": "none",
-    "access": "available"
+    "upgradeTarget": 24,
+    "upgradeStatus": "upgrading",
+    "access": "available",
+    "observationNote": "Player confirms this upgrade is underway; remaining time unknown."
   },
   {
     "id": "building-beta-research-division",
@@ -192,9 +193,10 @@ window.ZROUTE_BUILDINGS = [
     "updated": "2026-10-20",
     "building": true,
     "built": true,
-    "upgradeTarget": null,
-    "upgradeStatus": "none",
-    "access": "available"
+    "upgradeTarget": 23,
+    "upgradeStatus": "upgrading",
+    "access": "available",
+    "observationNote": "Player confirms this upgrade is underway; remaining time unknown."
   },
   {
     "id": "building-assault-training-center",

@@ -8,7 +8,7 @@ Personal field guide for a close-to-F2P account. Open index.html or serve this f
 
 `command-dashboard.html` and its small static files in `command-dashboard-assets/` provide three prioritized actions, a conditional seven-day plan, the Base 27 → Camp 1 level 27 → T9 roadmap, funded construction scheduling, resource forecasts, research ROI and editable browser-local account state. Advanced analysis is expandable under four primary destinations.
 
-Use **My Account → Export account JSON** before moving between local files, GitHub Pages or browsers; import the dashboard JSON at the destination. Browser storage does not move with the HTML file. The local downloadable HTML remains self-contained; the hosted copy loads equivalent static scripts. The older living-guide tracker has a different account format and remains a separate tool.
+Use **My Account → Export account JSON** before moving between local files, GitHub Pages or browsers; import the dashboard JSON at the destination. Browser storage does not move with the HTML file. The local downloadable HTML remains self-contained; the hosted copy loads equivalent static scripts. The guide and construction tool retain their compatible legacy formats. Explicit building and immediate-resource edits now synchronize on the same browser origin; use complete workspace export/import to move all saved tools together.
 
 [Dashboard validation report](command-dashboard-validation.md). Unknown timers, balances, unlock thresholds and eligibility remain unverified; no game action or completion is performed automatically.
 
@@ -27,3 +27,13 @@ All 18 previous sections remain in the Strategy Library with audit notes. `index
 Use a review branch and pull request. Upload index.html, app.js, seed.js, style.css, AUDIT.md, README.md and the archived HTML pages to the repository root. Keep any existing files not included here. Do not upload videos, screenshots, browser account exports, or credentials.
 
 Before merging, inspect the changed files and preview the page. Existing GitHub Pages settings should remain unchanged. After merge, verify the Pages deployment succeeded and the public page shows v20.5. Export browser data before changing origin/domain. To roll back the site, revert the PR commit; browser account data is separate and can be restored from JSON backups.
+
+## Master Guide and Sky Fighter update
+
+[Open Sky Fighter](https://franksmi.github.io/z-route-guide/#fighterDashboard). The restored account editor defaults to Building Inventory; all other categories remain editable. Edit action plans and priorities inline. Saved observations are never refreshed from an older bundled audit.
+
+Sky Fighter includes the supplied Lv73 account, six component slots, direct Hero versus converted Fighter comparisons, inventory and three-to-one fusion planning through Lv8, shop/currency tracking, editable provisional priorities, event notes and conditional random-chest acquisition scenarios. Unknown drop rates and Alliance limits are not assigned defaults. Target previews do not complete upgrades.
+
+Use **Backups & recoverable account history** to export the complete workspace, import a reviewed backup or recover one of20 recent versions. Existing per-tool imports/exports remain available. Saved data stays local; publishing does not upload your subsequent browser edits.
+
+[Implementation, sources, uncertainties and validation](master-validation.md). Repeatable checks: `node tests/fighter.test.cjs`, `node tests/workspace.test.cjs`, `node tests/construction.test.cjs`.
