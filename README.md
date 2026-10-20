@@ -2,6 +2,16 @@
 
 Personal field guide for a close-to-F2P account. Open index.html or serve this folder as a static website. No build step, dependencies, game login or automatic game synchronization.
 
+## T9 Command Dashboard
+
+[Open the interactive Command Dashboard](https://franksmi.github.io/z-route-guide/command-dashboard.html).
+
+`command-dashboard.html` and its small static files in `command-dashboard-assets/` provide three prioritized actions, a conditional seven-day plan, the Base 27 → Camp 1 level 27 → T9 roadmap, funded construction scheduling, resource forecasts, research ROI and editable browser-local account state. Advanced analysis is expandable under four primary destinations.
+
+Use **My Account → Export account JSON** before moving between local files, GitHub Pages or browsers; import the dashboard JSON at the destination. Browser storage does not move with the HTML file. The local downloadable HTML remains self-contained; the hosted copy loads equivalent static scripts. The older living-guide tracker has a different account format and remains a separate tool.
+
+[Dashboard validation report](command-dashboard-validation.md). Unknown timers, balances, unlock thresholds and eligibility remain unverified; no game action or completion is performed automatically.
+
 ## Daily use
 1. Open Account Tracker and choose a category.
 2. Edit current values, evidence source, status and observed date; save each row. Linked upgrade goals complete when the tracked level reaches their target. Lowering a level reopens the goal.
