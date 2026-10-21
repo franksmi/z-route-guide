@@ -37,3 +37,11 @@ Sky Fighter includes the supplied Lv73 account, six component slots, direct Hero
 Use **Backups & recoverable account history** to export the complete workspace, import a reviewed backup or recover one of20 recent versions. Existing per-tool imports/exports remain available. Saved data stays local; publishing does not upload your subsequent browser edits.
 
 [Implementation, sources, uncertainties and validation](master-validation.md). Repeatable checks: `node tests/fighter.test.cjs`, `node tests/workspace.test.cjs`, `node tests/construction.test.cjs`.
+
+## Command Center redesign — pending design approval
+
+The new root homepage is a local review version, not a deployed update. See [REDESIGN-REVIEW.md](REDESIGN-REVIEW.md) for protection, retained features, test evidence, uncertainties and rollback instructions. `legacy-guide.html` retains the original guide; the existing calculation and storage tools remain authoritative. Serve this folder over HTTP to use the embedded same-origin planning tools. Preview account exports are private and excluded from this repository.
+
+## Approved Command Center release
+
+The Command Center redesign was approved on 2026-10-20. The home screen and six categories organize actions, roadmaps and current status. Existing account storage, editors, recovery and advanced planning remain available. See REDESIGN-REVIEW.md for pre-release validation.
