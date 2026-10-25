@@ -50,3 +50,7 @@ The Command Center redesign was approved on 2026-10-20. The home screen and six 
 ## v21 development milestone 1
 
 See [architecture inventory, migration contract, validation and roadmap](V21-MILESTONE-1.md). Development changes belong to `v21-development`; merging and deployment require separate approval. The shared account view retains v20.5 workspace compatibility and fixes construction editor routing and duplicate skill-book display. Run `node --test tests/*.cjs`.
+
+## Milestone 2.1 — compact hero cards
+
+See [redesign behavior, preservation contract, asset limits and validation](V21-MILESTONE-2.1.md). Focused level, recorded-power, per-star observation, named-skill and four-slot gear controls preserve original evidence and existing workspace compatibility. Exact sub-star steps and authentic portraits remain evidence/permission gaps. Review only; no production deployment.
