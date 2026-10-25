@@ -45,3 +45,8 @@ The new root homepage is a local review version, not a deployed update. See [RED
 ## Approved Command Center release
 
 The Command Center redesign was approved on 2026-10-20. The home screen and six categories organize actions, roadmaps and current status. Existing account storage, editors, recovery and advanced planning remain available. See REDESIGN-REVIEW.md for pre-release validation.
+
+
+## v21 development milestone 1
+
+See [architecture inventory, migration contract, validation and roadmap](V21-MILESTONE-1.md). Development changes belong to `v21-development`; merging and deployment require separate approval. The shared account view retains v20.5 workspace compatibility and fixes construction editor routing and duplicate skill-book display. Run `node --test tests/*.cjs`.
