@@ -3,13 +3,23 @@
 const keys={guide:'zroute-v205-state',dashboard:'zroute-command-v2',fighter:'zroute-fighter-v1'};
 const buildings={1001:'base',1002:'building-defense-line',1004:'hospital',1007:'alpha',5044:'warrior',1020:'camp',10202:'building-soldier-training-camp-2',10203:'building-soldier-training-camp-3',10204:'building-soldier-training-camp-4'};
 const copy=x=>JSON.parse(JSON.stringify(x));
+// Preserve extension properties while applying validated schema values.
+function retain(original,validated){
+ if(Array.isArray(validated))return validated.map((v,i)=>retain(original?.[i],v));
+ if(validated&&typeof validated==='object'){
+  const result=original&&typeof original==='object'&&!Array.isArray(original)?copy(original):{};
+  for(const [k,v]of Object.entries(validated))Object.defineProperty(result,k,{value:retain(original?.[k],v),enumerable:true,writable:true,configurable:true});
+  return result;
+ }
+ return validated;
+}
 function prepare(doc,validators){
  if(!doc||doc.format!=='zroute-workspace'||doc.version!==1||!doc.data||typeof doc.data!=='object'||Array.isArray(doc.data))throw Error('Unsupported workspace backup');
  const included=Object.keys(doc.data);
  if(!included.length||included.some(k=>!Object.values(keys).includes(k)))throw Error('Unknown workspace tool');
  // Validate a private copy: validators cannot mutate the uploaded document.
  const next=copy(doc);
- for(const k of included){if(typeof validators[k]!=='function')throw Error('Missing tool validator');next.data[k]=validators[k](copy(next.data[k]));}
+ for(const k of included){if(typeof validators[k]!=='function')throw Error('Missing tool validator');next.data[k]=retain(next.data[k],validators[k](copy(next.data[k])));}
  return next;
 }
 function view(data){
